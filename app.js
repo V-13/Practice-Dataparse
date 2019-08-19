@@ -22,6 +22,6 @@ app.get('/info',(rq,rs)=>{
     rs.render('info',{title:'Student info'});
 });
 
-app.listen(5000,()=>{
+app.listen(process.env.PORT||5000,()=>{
     console.log("server running on 5000");
 });
